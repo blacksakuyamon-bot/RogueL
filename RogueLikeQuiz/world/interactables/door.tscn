@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_klmno"]
 size = Vector2(16, 16)
 
-[node name="Door" type="Area2D" parent="." groups=["door"]]
+[node name="Door" type="Area2D" groups=["door"]]
 collision_layer = 2
 script = ExtResource("1_abcde")
 
