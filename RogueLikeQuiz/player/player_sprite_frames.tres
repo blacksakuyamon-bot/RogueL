@@ -1,0 +1,65 @@
+[gd_resource type="SpriteFrames" load_steps=13 format=3 uid="uid://cyw83unepkksx"]
+
+[ext_resource type="Texture2D" uid="uid://dps28gpdjrqg7" path="res://assets/Characters/1/D_Idle.png" id="1_abcde"]
+[ext_resource type="Texture2D" uid="uid://dps28gpdjrqg8" path="res://assets/Characters/1/D_Walk.png" id="2_abcde"]
+[ext_resource type="Texture2D" uid="uid://dps28gpdjrqg9" path="res://assets/Characters/1/S_Idle.png" id="3_abcde"]
+[ext_resource type="Texture2D" uid="uid://dps28gpdjrq10" path="res://assets/Characters/1/S_Walk.png" id="4_abcde"]
+[ext_resource type="Texture2D" uid="uid://dps28gpdjrq11" path="res://assets/Characters/1/U_Idle.png" id="5_abcde"]
+[ext_resource type="Texture2D" uid="uid://dps28gpdjrq12" path="res://assets/Characters/1/U_Walk.png" id="6_abcde"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_abcde")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_abcde")
+}],
+"loop": true,
+"name": &"idle_side",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_abcde")
+}],
+"loop": true,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [
+	{ "duration": 1.0, "texture": ExtResource("2_abcde"), "region": Rect2(0, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("2_abcde"), "region": Rect2(16, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("2_abcde"), "region": Rect2(32, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("2_abcde"), "region": Rect2(48, 0, 16, 16) }
+],
+"loop": true,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [
+	{ "duration": 1.0, "texture": ExtResource("4_abcde"), "region": Rect2(0, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("4_abcde"), "region": Rect2(16, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("4_abcde"), "region": Rect2(32, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("4_abcde"), "region": Rect2(48, 0, 16, 16) }
+],
+"loop": true,
+"name": &"walk_side",
+"speed": 5.0
+}, {
+"frames": [
+	{ "duration": 1.0, "texture": ExtResource("6_abcde"), "region": Rect2(0, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("6_abcde"), "region": Rect2(16, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("6_abcde"), "region": Rect2(32, 0, 16, 16) },
+	{ "duration": 1.0, "texture": ExtResource("6_abcde"), "region": Rect2(48, 0, 16, 16) }
+],
+"loop": true,
+"name": &"walk_up",
+"speed": 5.0
+}]

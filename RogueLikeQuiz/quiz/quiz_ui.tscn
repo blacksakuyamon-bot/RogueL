@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://dknq3t3q3q3q3"]
+
+[ext_resource type="Script" path="res://quiz/quiz_ui.gd" id="1_abcde"]
+
+[node name="QuizUI" type="CanvasLayer"]
+visible = false # Starts hidden
+script = ExtResource("1_abcde")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+minimum_size = Vector2(800, 400)
+offset_left = -400.0
+offset_top = -200.0
+offset_right = 400.0
+offset_bottom = 200.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+
+[node name="QuestionLabel" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Esta é uma pergunta de exemplo? Qual é a cor do cavalo branco de Napoleão?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="AnswersContainer" type="VBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="AnswerButton1" type="Button" parent="Panel/VBoxContainer/AnswersContainer"]
+layout_mode = 2
+text = "Resposta A"
+
+[node name="AnswerButton2" type="Button" parent="Panel/VBoxContainer/AnswersContainer"]
+layout_mode = 2
+text = "Resposta B"
+
+[node name="AnswerButton3" type="Button" parent="Panel/VBoxContainer/AnswersContainer"]
+layout_mode = 2
+text = "Resposta C"
+
+[node name="AnswerButton4" type="Button" parent="Panel/VBoxContainer/AnswersContainer"]
+layout_mode = 2
+text = "Resposta D"
+
+[node name="AnswerButton5" type="Button" parent="Panel/VBoxContainer/AnswersContainer"]
+layout_mode = 2
+text = "Resposta E"

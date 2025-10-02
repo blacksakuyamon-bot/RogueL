@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1e2f3g4h5i6j"]
+
+[ext_resource type="Script" path="res://ui/player_hud.gd" id="1_abcde"]
+[ext_resource type="Texture2D" uid="uid://c1d2e3f4g5h6" path="res://assets/Tiles/Tile_03.png" id="2_abcde"]
+
+[node name="PlayerHUD" type="CanvasLayer"]
+script = ExtResource("1_abcde")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 4
+margin_left = 10.0
+margin_top = 10.0
+
+[node name="Heart1" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_abcde")
+
+[node name="Heart2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_abcde")
+
+[node name="Heart3" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_abcde")

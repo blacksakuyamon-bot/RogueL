@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://bkhs8gq8wda6c"]
+
+[ext_resource type="Script" path="res://world/map_generator.gd" id="1_abcde"]
+[ext_resource type="PackedScene" uid="uid://c6vkncp86b6t2" path="res://player/player.tscn" id="2_abcde"]
+[ext_resource type="PackedScene" uid="uid://dknq3t3q3q3q3" path="res://quiz/quiz_ui.tscn" id="3_abcde"]
+[ext_resource type="PackedScene" uid="uid://d1e2f3g4h5i6j" path="res://ui/player_hud.tscn" id="4_abcde"]
+[ext_resource type="TileSet" uid="uid://b4ywm3w5w5w5w" path="res://world/dungeon_tileset.tres" id="5_abcde"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_abcde")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("5_abcde")
+format = 2
+
+[node name="Player" parent="." instance=ExtResource("2_abcde")]
+position = Vector2(0, 0)
+
+[node name="QuizUI" parent="." instance=ExtResource("3_abcde")]
+
+[node name="PlayerHUD" parent="." instance=ExtResource("4_abcde")]

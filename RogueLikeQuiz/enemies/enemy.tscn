@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1b2b3b4b5b6"]
+
+[ext_resource type="Script" path="res://enemies/enemy.gd" id="1_abcde"]
+[ext_resource type="SpriteFrames" uid="uid://d4e5f6g7h8i9" path="res://enemies/enemy_sprite_frames.tres" id="2_abcde"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fghij"]
+size = Vector2(16, 16)
+
+[node name="Enemy" type="Area2D" parent="." groups=["enemy"]]
+collision_layer = 2
+script = ExtResource("1_abcde")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_abcde")
+animation = &"idle_down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fghij")
